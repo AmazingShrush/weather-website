@@ -13,7 +13,7 @@ const forecast=(lat,long,callback)=>{
         }
         else{
             //console.log(response.body.current.weather_descriptions[0]+'. It is '+response.body.current.temperature+' degrees. It feels like '+response.body.current.feelslike+" degrees")
-            callback(undefined,body.current.weather_descriptions[0]+'. It is '+body.current.temperature+' degrees. It feels like '+body.current.feelslike+" degrees")
+            callback(undefined,body.current.weather_descriptions[0]+'. It is '+body.current.temperature+' degrees. It feels like '+body.current.feelslike+" degrees. The humidity is "+body.current.humidity+" %")
         }
         
     })
